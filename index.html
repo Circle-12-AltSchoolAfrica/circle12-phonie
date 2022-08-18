@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="./images/favicon.svg" />
-  <meta
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/favicon.svg" />
+    <meta
       name="description"
       content="Phonie - A web-based mobile responsive application that detects your network carrier taking your valid mobile number as Input."
     />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PHONIE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHONIE</title>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header class="head"></header>
-  <main class="container">
-    <div class="logo">
-      <h1>phonie-altschool</h1>
-      <h5>know your network provider</h5>
-    </div>
-    <form id="form" class="form">
-      <div class="alert"></div>
-      <div class="input-field">
-        <input type="text" placeholder="Enter Your Mobile Number" id="phoneNumber" name="phoneNumber" autocomplete="off"
-          required />
+  <body>
+    <div class="head"></div>
+    <main class="container">
+      <div class="logo">
+        <h1>phonie-altschool</h1>
+        <h5>know your network provider</h5>
       </div>
-      <div class="carrier-img" id="carrier"></div>
-      <button class="btn">Detect my Network</button>
-    </form>
-  </main>
-  <footer>
-    <div>
-      <a href="https://twitter.com/intent/tweet?&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="small"
-        data-text="I just tried out #PHONIE and it got the network of my 🇳🇬 telephone number correctly. Check it out! cc:@AltSchoolAfrica"
-        data-show-count="false">Tweet to @AltSchoolAfrica</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    <div class="bar"></div>
-    <div>
-      <h4>Made with 🧡 by <a href="">Circle-12 @AltSchoolAfrica</a></h4>
-      <p>&copy; 2022</p>
-    </div>
-
-  </footer>
-  <!-- // ============= EEND DO NOT EDIT ============== // -->
-  <script src="index.mjs" type="module"></script>
-  <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
-
-
+      <form id="form" class="form">
+        <div class="alert"></div>
+        <div class="input-field">
+          <input
+            type="text"
+            placeholder="Enter Your Mobile Number"
+            id="phoneNumber"
+            name="phoneNumber"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="carrier-img" id="carrier"></div>
+        <button class="btn">Detect my Network</button>
+      </form>
+    </main>
+    <div class="tail"></div>
+    <footer>
+      <div>
+        <a
+          href="https://twitter.com/intent/tweet?&ref_src=twsrc%5Etfw"
+          class="twitter-mention-button"
+          data-size="small"
+          data-text="I just tried out #PHONIE and it got the network of my 🇳🇬 telephone number correctly. Check it out! cc:@AltSchoolAfrica"
+          data-show-count="false"
+          >Tweet to @AltSchoolAfrica</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <div class="bar"></div>
+      <div>
+        <h4>Made with 🧡 by <a href="">Circle-12 @AltSchoolAfrica</a></h4>
+        <p>&copy; 2022</p>
+      </div>
+    </footer>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+    <script src="index.mjs" type="module"></script>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+  </body>
 </html>
