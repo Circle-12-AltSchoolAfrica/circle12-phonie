@@ -1,4 +1,5 @@
 function startApp() {
+  //declare variables
   let phoneNumber = document.getElementById("phoneNumber");
   let alert = document.querySelector(".alert");
   let carrier = document.getElementById("carrier");
@@ -6,12 +7,12 @@ function startApp() {
   let form = document.getElementById("form");
 
 
-
+  //prevent default
   btn.addEventListener("click", (ev) => {
     // prevents default behaviour of the button
     ev.preventDefault();
 
-
+    //using regex to validate
     let order = /((\+234?)|0)?[ -]?(?<network>\d{4})[ -]?(\d{3})[ -]?(\d{4})/;
     let entry = phoneNumber.value;
 
@@ -85,25 +86,33 @@ function startApp() {
       alert.classList.add("valid");
       alert.innerText = "Success!. Your Network Carrier is MTN";
       carrier.style.backgroundImage = "url(./images/mtn.svg)";
-    } else if (entryContains(MOBILE_NETWORKS["9MOBILE"], network)) {
+    } 
+    
+    else if (entryContains(MOBILE_NETWORKS["9MOBILE"], network)) {
       phoneNumber.classList.add("valid");
       alert.style.visibility = "visible";
       alert.classList.add("valid");
       alert.innerText = "Success!. Your Network Carrier is 9MOBILE";
       carrier.style.backgroundImage = "url(./images/9mobile.svg)";
-    } else if (entryContains(MOBILE_NETWORKS.AIRTEL, network)) {
+    } 
+    
+    else if (entryContains(MOBILE_NETWORKS.AIRTEL, network)) {
       phoneNumber.classList.add("valid");
       alert.style.visibility = "visible";
       alert.classList.add("valid");
       alert.innerText = "Success!. Your Network Carrier is AIRTEL";
       carrier.style.backgroundImage = "url(./images/airtel.svg)";
-    } else if (entryContains(MOBILE_NETWORKS.GLO, network)) {
+    } 
+    
+    else if (entryContains(MOBILE_NETWORKS.GLO, network)) {
       phoneNumber.classList.add("valid");
       alert.style.visibility = "visible";
       alert.classList.add("valid");
       alert.innerText = "Success!. Your Network Carrier is GLO";
       carrier.style.backgroundImage = "url(./images/glo.svg)";
-    } else {
+    }
+    
+    else {
       phoneNumber.classList.add("invalid");
       alert.style.visibility = "visible";
       alert.classList.add("invalid");
